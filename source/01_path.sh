@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 paths=(
   ~/.local/bin
   ~/.dotfiles/bin
@@ -28,6 +26,8 @@ fi
 
 export PATH
 for p in "${paths[@]}"; do
+  echo "List path"
+  echo $p
   [[ -d "$p" ]] && PATH="$p:$(path_remove "$p")"
 done
 unset p paths
