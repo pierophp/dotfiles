@@ -12,6 +12,7 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH=~/.local/bin:$PATH
 
+
 alias xc="xclip -selection c"
 alias redis-local-keys="redis-cli -h redis.service.consul KEYS $1"
 alias redis-local-keys-del="redis-cli -h redis.service.consul KEYS $1 | xargs redis-cli -h redis.service.consul DEL"
@@ -30,6 +31,8 @@ if [ -f '~/google-cloud-sdk/path.bash.inc' ]; then . '~/google-cloud-sdk/path.zs
 if [ -f '~/google-cloud-sdk/completion.bash.inc' ]; then . '~/google-cloud-sdk/completion.zsh.inc'; fi 
 
 export DOTFILES=~/.dotfiles
+export PATH=~/.dotfiles/bin:$PATH
+
 # Source all files in "source"
 function src() {
   local file
