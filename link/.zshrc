@@ -29,7 +29,7 @@ if [ -f '~/google-cloud-sdk/path.bash.inc' ]; then . '~/google-cloud-sdk/path.zs
 # The next line enables shell command completion for gcloud. /
 if [ -f '~/google-cloud-sdk/completion.bash.inc' ]; then . '~/google-cloud-sdk/completion.zsh.inc'; fi 
 
-
+export DOTFILES=~/.dotfiles
 # Source all files in "source"
 function src() {
   local file
