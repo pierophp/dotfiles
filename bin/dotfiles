@@ -469,7 +469,7 @@ if [[ ! "$(type -P git)" ]]; then
   e_error "Git should be installed. It isn't. Aborting."
   exit 1
 fi
-
+echo $DOTFILES
 # Initialize.
 if [[ ! -d $DOTFILES ]]; then
   # Dotfiles directory doesn't exist? Clone it!
