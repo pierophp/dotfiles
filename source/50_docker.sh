@@ -19,8 +19,6 @@ function dke() {
        containerSearch=$1
    fi
 
-   echo $containerSearch
-
    container=`docker ps | grep web | grep $containerSearch | awk '{ print $1 }' | head -n 1`
    if [ "$container" = "" ]
    then
