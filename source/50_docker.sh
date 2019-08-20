@@ -8,6 +8,7 @@ alias di='d images'
 alias dco='docker-compose'
 alias dcou="docker-compose up $1"
 alias dcod="docker-compose down"
+alias dcol="docker-compose logs -f"
 
 alias k8s-prod="gcloud container clusters get-credentials production --region us-east4 --project bbrands-production"
 alias k8s-staging="gcloud container clusters get-credentials staging-cluster --zone us-east4-a --project staging-203611"
