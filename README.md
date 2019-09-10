@@ -12,8 +12,16 @@ This is my version of Cowboy's [dotfiles repository](https://github.com/cowboy/d
 
 #### Ubuntu
 
+ZSH
+
 ```sh
 bash -c "$(wget -qO- https://raw.githubusercontent.com/pierophp/dotfiles/master/bin/dotfiles)" && source ~/.zshrc
+```
+
+BASH
+
+```sh
+bash -c "$(wget -qO- https://raw.githubusercontent.com/pierophp/dotfiles/master/bin/dotfiles)" && source ~/.bashrc
 ```
 
 ## License
