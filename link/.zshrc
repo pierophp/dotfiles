@@ -32,6 +32,7 @@ if [ -f '~/google-cloud-sdk/completion.zsh.inc' ]; then . '~/google-cloud-sdk/co
 
 export DOTFILES=~/.dotfiles
 export PATH=~/.dotfiles/bin:$PATH
+export PATH=~/google-cloud-sdk/bin/:$PATH
 
 # Source all files in "source"
 function src() {
